@@ -29,3 +29,5 @@ data.json
 **/.turbo/
 .vercel
 .env*.local
+
+.env

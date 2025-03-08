@@ -5,8 +5,11 @@ services:
       dockerfile: Dockerfile
     ports:
       - "3000:3000"
+    env_file:
+      - .env
     environment:
       - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - OPENAI_API_BASE=${OPENAI_API_BASE}
       - SOLO_API_KEY=${SOLO_API_KEY}
       - MODEL_VISION=${MODEL_VISION}
       - MODEL_TEXT=${MODEL_TEXT}
@@ -14,5 +17,4 @@ services:
       - MODEL_CLASSIFY=${MODEL_CLASSIFY}
       - MODEL_TAGGING=${MODEL_TAGGING}
       - MODEL_FOLDERS=${MODEL_FOLDERS}
-
       - OLLAMA_API_URL=${OLLAMA_API_URL}
