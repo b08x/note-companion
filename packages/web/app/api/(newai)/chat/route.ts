@@ -42,10 +42,10 @@ export async function POST(req: NextRequest) {
             chosenModelName = "gemini-2.0-flash-exp";
           } else {
             console.log("Using GPT-4o model");
-            chosenModelName = "gpt-4o";
+            chosenModelName = "gpt-4o-mini";
           }
         } else {
-          chosenModelName = "gpt-4o";
+          chosenModelName = "gpt-4o-mini";
         }
         console.log("Chat using model:", chosenModelName);
         const model = getModel(chosenModelName);

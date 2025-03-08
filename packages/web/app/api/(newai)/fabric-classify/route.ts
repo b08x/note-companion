@@ -23,7 +23,7 @@ export async function POST(request: NextRequest) {
     }
 
 
-    const model = getModel(process.env.MODEL_NAME || 'gpt-4o');
+    const model = getModel(process.env.MODEL_NAME || 'gpt-4o-mini');
 
     const result = await generateText({
       model: model,

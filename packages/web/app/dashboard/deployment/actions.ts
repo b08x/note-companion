@@ -225,9 +225,9 @@ export async function getDeploymentStatus(): Promise<
     );
     const googleKeyPresent = envs.some((env) => env.key === "GOOGLE_API_KEY");
     const currentModelName =
-      envs.find((env) => env.key === "MODEL_NAME")?.value || "gpt-4o";
+      envs.find((env) => env.key === "MODEL_NAME")?.value || "gpt-4o-mini";
     const currentVisionModelName =
-      envs.find((env) => env.key === "VISION_MODEL_NAME")?.value || "gpt-4o";
+      envs.find((env) => env.key === "VISION_MODEL_NAME")?.value || "gpt-4o-mini";
 
     return {
       projectUrl: deployment.projectUrl,

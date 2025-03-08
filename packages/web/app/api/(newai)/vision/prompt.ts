@@ -24,7 +24,7 @@ export const generateMessages = (
 console.log('vision model', model )
 
   switch (model) {
-    case "gpt-4o":
+    case "gpt-4o-mini":
     case "claude-3-5-sonnet-20241022":
     default:
       return [

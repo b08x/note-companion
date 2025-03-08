@@ -16,7 +16,7 @@ export function SearchToggle({ selectedModel }: SearchToggleProps) {
     setIsEnabled(!isEnabled);
   };
 
-  if (selectedModel !== 'gpt-4o') {
+  if (selectedModel !== 'gpt-4o-mini') {
     return null;
   }
 

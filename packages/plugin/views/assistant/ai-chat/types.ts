@@ -1,1 +1,1 @@
-export type ModelType = "gpt-4o" | "llama3.2" | string;
+export type ModelType = "gpt-4o-mini" | "llama3.2" | string;
